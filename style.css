@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    /* max-height: 1000px; */
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+}
+main{
+    width: 95%;
+    max-width: 1100px;
+    height: 1500px;
+}
+main header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 60px;
+    overflow: hidden;
+    background: #f0f0f17d;
+    margin-top: 15px;
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.116);
+}
+main header .logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+main header .logo img{
+    width: 30px;
+    height: 30px;
+}
+main header .logo h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+main header nav{
+    display: flex;
+    padding-left: 40px;
+}
+main header nav ul{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+main header nav ul li,
+main header nav  ul select{
+    list-style: none;
+    font-size: 13.4px;
+    font-weight: 500;
+    cursor: pointer;
+}
+main header nav  ul select{
+    border: 0;
+    background: none;
+    width: 70px;
+}
+main header nav  ul select:nth-child(2){
+    width: 58px;
+}
+main header .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+main header .btn button{
+    width: 100px;
+    border-radius: 20px;
+    border: 0;
+    font-weight: 400;
+    font-size: 14px;
+    height: 35px;
+    background: none;
+    cursor: pointer;
+}
+main header .btn button:nth-child(2){
+    background: #171717;
+    color: white;
+}
+main .hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .hero h1{
+    margin: 50px 0px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+main .hero .gallery{
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+}
+main .hero .gallery img{
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.124);
+}
+main .hero .gallery img:nth-child(1){
+    transform: rotate(-15deg) scale(1);
+    position: relative;
+    transition: all 0.2s;
+    top: 45px;
+    left: 30px;
+}
+main .hero .gallery img:nth-child(1):hover{
+    top: 20px; 
+    left: 50px; 
+    transform: rotate(0deg) scale(1.1);
+    transition: all 0.2s;
+    z-index: 20;
+}
+main .hero .gallery img:nth-child(2){
+    transform: rotate(-10deg) scale(1);
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+main .hero .gallery img:nth-child(2):hover{
+    top: 0px; 
+    /* left: 50px;  */
+    transform: rotate(0deg) scale(1.1);
+    transition: all 0.2s;
+    z-index: 20;
+}
+main .hero .gallery img:nth-child(3){
+    z-index: 1;
+    position: relative;
+}
+main .hero .gallery img:nth-child(3):hover{
+    top: -20px; 
+    /* left: 50px;  */
+    transform: rotate(0deg) scale(1.1);
+    transition: all 0.2s;
+    z-index: 20;
+}
+main .hero .gallery img:nth-child(4){
+    transform: rotate(10deg) scale(1);
+    position: relative;
+    top: 15px;
+    right: 20px;
+    z-index: 2;
+}
+main .hero .gallery img:nth-child(4):hover{
+    top: 0px; 
+    /* left: 50px;  */
+    transform: rotate(0deg) scale(1.1);
+    transition: all 0.2s;
+    z-index: 20;
+}
+main .hero .gallery img:nth-child(5){
+    transform: rotate(15deg) scale(1);
+    position: relative;
+    top: 45px;
+    right: 30px;
+}
+main .hero .gallery img:nth-child(5):hover{
+    top: 20px; 
+    right: 50px; 
+    transform: rotate(0deg) scale(1.1);
+    transition: all 0.2s;
+    z-index: 20;
+}
+main .hero .desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 70px;
+    width: 98%;
+    max-width: 350px;
+    text-align: center;
+}
+main .hero .desc h6{
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.545);
+}
+main .hero .desc .btn{
+    display: flex;
+    margin-top: 30px;
+    width: 75%;
+    /* gap: 5px; */
+}
+main .hero .desc .btn button{
+    width: 50%;
+    font-size: 10px;
+    background: black;
+    border: 0;
+    outline: 0;
+    color: white;
+    height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+main .hero .desc .btn button:nth-child(2){
+    background: none;
+    color: black;
+}
